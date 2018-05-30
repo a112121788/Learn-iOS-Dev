@@ -1,0 +1,19 @@
+{
+    "": [
+        "learn-ios-dev", 
+        "day01"
+    ], 
+    "__positions": {
+        "learn-ios-dev": 1, 
+        "day01": 2, 
+        "day01/readme.md": 2001
+    }, 
+    "day01": [
+        "readme.md"
+    ], 
+    "__raw_positions": {
+        "learn-ios-dev": 1, 
+        "day01": 2, 
+        "day01/readme.md": 1
+    }
+}
