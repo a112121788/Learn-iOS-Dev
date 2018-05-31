@@ -94,6 +94,10 @@ class UploadVideo2Controller: UIViewController,  UIImagePickerControllerDelegate
     
     let upManager = QNUploadManager(configuration: configuration)
 
+    var opt = QNUploadOption.init(progressHandler: {
+        (key, percent) in
+        print(key,percent, NSDate())
+    })
     
     upManager?.putFile(videoURL?.relativePath, key: nil, token: token, complete: { (info, key,resp) in
             print(info)
@@ -105,7 +109,7 @@ class UploadVideo2Controller: UIViewController,  UIImagePickerControllerDelegate
                 print("error")
             }
         
-        }, option: nil)
+        }, option: opt)
 
     }
     
