@@ -4,14 +4,18 @@
 
 
 import UIKit
+import SnapKit
+import Material
 
 class UploadVideoController: UIViewController {
     
     var frostedView: UIToolbar = UIToolbar()
+    let name_input = TextField()
+    let next_btn = Button()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "上传视频"
+        self.title = "上传视频 1/2"
         
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedStringKey.foregroundColor: UIColor.white
@@ -23,6 +27,26 @@ class UploadVideoController: UIViewController {
     
     func initViews(){
         self.view.backgroundColor = UIColor.white
+        self.view.addSubview(name_input)
+        self.view.addSubview(next_btn)
+        
+        name_input.placeholder = "请输入视频名称"
+        next_btn.setTitle("选择视频", for: UIControlState())
+        next_btn.backgroundColor = UIColor(red: 0.98, green: 0.42, blue: 0.61, alpha: 1.00)
+        
+        name_input.snp.makeConstraints { (make) in
+            make.left.equalTo(self.view).offset(20)
+            make.right.equalTo(self.view).offset(-20)
+            make.top.equalTo(self.view).offset(80)
+        }
+        
+        next_btn.snp.makeConstraints { (make) in
+            make.left.equalTo(self.view).offset(20)
+            make.right.equalTo(self.view).offset(-20)
+            make.height.equalTo(40)
+            make.top.equalTo(name_input.snp.bottom).offset(30)
+        }
+        
         
     }
     

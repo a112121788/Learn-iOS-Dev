@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window =  UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.gray
         
-        let navController = UINavigationController(rootViewController: UploadVideoController())
+        let navController = UINavigationController(rootViewController: UploadVideo2Controller())
         self.window?.rootViewController = navController
         self.window!.makeKeyAndVisible()
         

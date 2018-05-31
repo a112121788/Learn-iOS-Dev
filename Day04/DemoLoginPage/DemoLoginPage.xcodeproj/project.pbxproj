@@ -14,6 +14,7 @@
 		9718390D20BFDDC800611C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9718390B20BFDDC800611C7E /* LaunchScreen.storyboard */; };
 		972BD42E20BFE955005E8A2E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972BD42D20BFE955005E8A2E /* HomeController.swift */; };
 		972BD43020BFEE55005E8A2E /* UploadVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972BD42F20BFEE55005E8A2E /* UploadVideoController.swift */; };
+		972BD43220C01070005E8A2E /* UploadVideo2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972BD43120C0106F005E8A2E /* UploadVideo2Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		9718390E20BFDDC800611C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		972BD42D20BFE955005E8A2E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		972BD42F20BFEE55005E8A2E /* UploadVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVideoController.swift; sourceTree = "<group>"; };
+		972BD43120C0106F005E8A2E /* UploadVideo2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadVideo2Controller.swift; sourceTree = "<group>"; };
 		A929D40964A6D49C88D06F59 /* Pods-DemoLoginPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLoginPage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoLoginPage/Pods-DemoLoginPage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				9718390420BFDDC700611C7E /* ViewController.swift */,
 				972BD42D20BFE955005E8A2E /* HomeController.swift */,
 				972BD42F20BFEE55005E8A2E /* UploadVideoController.swift */,
+				972BD43120C0106F005E8A2E /* UploadVideo2Controller.swift */,
 				9718390920BFDDC800611C7E /* Assets.xcassets */,
 				9718390B20BFDDC800611C7E /* LaunchScreen.storyboard */,
 				9718390E20BFDDC800611C7E /* Info.plist */,
@@ -169,12 +172,14 @@
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/VGPlayer/VGPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VGPlayer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -209,6 +214,7 @@
 				9718390520BFDDC700611C7E /* ViewController.swift in Sources */,
 				9718390320BFDDC700611C7E /* AppDelegate.swift in Sources */,
 				972BD43020BFEE55005E8A2E /* UploadVideoController.swift in Sources */,
+				972BD43220C01070005E8A2E /* UploadVideo2Controller.swift in Sources */,
 				972BD42E20BFE955005E8A2E /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

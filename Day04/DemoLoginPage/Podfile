@@ -5,4 +5,5 @@ target 'DemoLoginPage' do
   use_frameworks!
   pod 'Material'
   pod 'SnapKit'
+  pod 'VGPlayer'
 end
