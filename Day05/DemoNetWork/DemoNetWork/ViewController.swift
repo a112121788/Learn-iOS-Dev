@@ -5,6 +5,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -12,19 +13,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        Alamofire.request("https://m.baidu.com").responseJSON { resp in
+        Alamofire.request("http://localhost:3000/videos").responseJSON { resp in
             //print(resp.request)
             //print(resp.response)
 
             //print(resp.error != nil)
-            print(resp.result.value)
+            //print(resp.result.value)
+            let data = JSON(resp.result.value)
+            print(data[0]["title"])
         }
-        .responseString {resp in
-            print(resp.result.value)
-        }
-        
-     
-        
+
     }
 
 }
