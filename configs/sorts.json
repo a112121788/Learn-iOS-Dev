@@ -33,6 +33,7 @@
     ], 
     "day05": [
         "readme.md", 
+        "demokeychain", 
         "demonetwork"
     ], 
     "day04": [
@@ -64,7 +65,8 @@
         "day02/demofirstapp": 4002, 
         "day01/day02": 3002, 
         "day06/readme.md": 8001, 
-        "day05/demonetwork": 7002, 
+        "day05/demokeychain": 7002, 
+        "day05/demonetwork": 7003, 
         "day03/readme.md": 5001
     }, 
     "__raw_positions": {
@@ -91,7 +93,8 @@
         "day02/demofirstapp": 2, 
         "day01/day02": 2, 
         "day06/readme.md": 1, 
-        "day05/demonetwork": 2, 
+        "day05/demokeychain": 2, 
+        "day05/demonetwork": 3, 
         "day03/readme.md": 1
     }
 }
