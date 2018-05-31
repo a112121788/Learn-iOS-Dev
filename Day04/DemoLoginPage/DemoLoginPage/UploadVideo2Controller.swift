@@ -13,7 +13,7 @@ import AssetsLibrary
 import AVKit
 import AVFoundation
 
-class UploadVideo2Controller: UIViewController {
+class UploadVideo2Controller: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var frostedView: UIToolbar = UIToolbar()
     
@@ -35,6 +35,46 @@ class UploadVideo2Controller: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(createImageWithColor(UIColor(red: 0.98, green: 0.42, blue: 0.61, alpha: 1.00)), for: .default)
 
         initViews()
+    }
+    
+    
+    //选择视频
+    @objc func selectVideo() {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            //初始化图片控制器
+            let imagePicker = UIImagePickerController()
+            //设置代理
+            imagePicker.delegate = self
+            //指定图片控制器类型
+            imagePicker.sourceType = .photoLibrary
+            //只显示视频类型的文件
+            imagePicker.mediaTypes = [kUTTypeMovie as String]
+            //不需要编辑
+            imagePicker.allowsEditing = false
+            //弹出控制器，显示界面
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+        else {
+            print("读取相册错误")
+        }
+    }
+    
+    
+    //选择视频成功后代理
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [String : Any]) {
+        //获取视频路径（选择后视频会自动复制到app临时文件夹下）
+        let videoURL = info[UIImagePickerControllerMediaURL] as! URL
+        let pathString = videoURL.relativePath
+        print("视频地址：\(pathString)")
+        
+        
+        //图片控制器退出
+        self.dismiss(animated: true, completion: {})
+        self.player.replaceVideo(videoURL)
+        
+        //播放视频文件
+        //reviewVideo(videoURL)
     }
     
     func initViews(){
@@ -60,8 +100,9 @@ class UploadVideo2Controller: UIViewController {
         
         upload_btn.setTitle("开始上传", for: UIControlState())
         upload_btn.backgroundColor = UIColor(red: 0.98, green: 0.42, blue: 0.61, alpha: 1.00)
-        
-        
+        upload_btn.addTarget(self, action:#selector(selectVideo), for:.touchUpInside)
+
+    
         
         name_label.snp.makeConstraints { (make) in
             make.left.equalTo(self.view).offset(20)
