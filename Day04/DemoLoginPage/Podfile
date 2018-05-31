@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'DemoLoginPage' do
+  use_frameworks!
+  pod 'Material'
+  pod 'SnapKit'
+end
