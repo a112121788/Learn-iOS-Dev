@@ -6,4 +6,6 @@ target 'DemoLoginPage' do
   pod 'Material'
   pod 'SnapKit'
   pod 'VGPlayer'
+  pod "Qiniu", "~> 7.2"
+
 end

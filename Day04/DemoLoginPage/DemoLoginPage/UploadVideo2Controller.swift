@@ -23,7 +23,9 @@ class UploadVideo2Controller: UIViewController,  UIImagePickerControllerDelegate
     let video_size_label = UILabel()
     let notice_label = UILabel()
 
+    let selectt_video_btn = Button()
     let upload_btn = Button()
+    var videoURL = URL(string: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,18 +66,50 @@ class UploadVideo2Controller: UIViewController,  UIImagePickerControllerDelegate
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [String : Any]) {
         //获取视频路径（选择后视频会自动复制到app临时文件夹下）
-        let videoURL = info[UIImagePickerControllerMediaURL] as! URL
-        let pathString = videoURL.relativePath
+        videoURL = info[UIImagePickerControllerMediaURL] as! URL?
+        let pathString = videoURL?.relativePath
         print("视频地址：\(pathString)")
-        
+        print(videoURL)
         
         //图片控制器退出
         self.dismiss(animated: true, completion: {})
-        self.player.replaceVideo(videoURL)
+        self.player.replaceVideo(videoURL!)
         
+
         //播放视频文件
         //reviewVideo(videoURL)
     }
+    
+   @objc func uploagVideo() {
+    let token = "上传token"
+
+    
+    // Automatically recognize different regions of the storage zone.
+    let configuration = QNConfiguration.build { builder in
+        let dns = QNDnsManager([QNResolver.system()], networkInfo: QNNetworkInfo.normal())
+        let zone = QNAutoZone(dns: dns)
+        builder?.useHttps = false
+        builder?.setZone(QNAutoZone(dns: dns))
+    }
+    
+    let upManager = QNUploadManager(configuration: configuration)
+
+    
+    upManager?.putFile(videoURL?.relativePath, key: nil, token: token, complete: { (info, key,resp) in
+            print(info)
+            print(key)
+            print(resp)
+            if(info?.statusCode == 200 && resp != nil){
+                print("success")
+            }else{
+                print("error")
+            }
+        
+        }, option: nil)
+
+    }
+    
+    
     
     func initViews(){
         self.view.backgroundColor = UIColor.white
@@ -83,13 +117,14 @@ class UploadVideo2Controller: UIViewController,  UIImagePickerControllerDelegate
         self.view.addSubview(player.displayView)
         self.view.addSubview(video_size_label)
         self.view.addSubview(notice_label)
+        self.view.addSubview(selectt_video_btn)
         self.view.addSubview(upload_btn)
         
     
         name_label.text = "视频名称： 视频"
         
         
-        self.player.replaceVideo(URL(string: "http://imgcdn.nowapp.cn/o_1celbtksdoh614km1oou1rvac8h7.mp4")!)
+        self.player.replaceVideo(URL(string: "")!)
         self.player.displayView.titleLabel.text = ""
         self.player.displayView.closeButton.isHidden = true
         self.player.displayView.topView.isHidden = true
@@ -98,9 +133,15 @@ class UploadVideo2Controller: UIViewController,  UIImagePickerControllerDelegate
         
         notice_label.text = "提醒：提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒"
         
+        selectt_video_btn.setTitle("选择视频", for: UIControlState())
+        selectt_video_btn.backgroundColor = UIColor(red: 0.98, green: 0.42, blue: 0.61, alpha: 1.00)
+        selectt_video_btn.addTarget(self, action:#selector(selectVideo), for:.touchUpInside)
+        
+        
+        
         upload_btn.setTitle("开始上传", for: UIControlState())
         upload_btn.backgroundColor = UIColor(red: 0.98, green: 0.42, blue: 0.61, alpha: 1.00)
-        upload_btn.addTarget(self, action:#selector(selectVideo), for:.touchUpInside)
+        upload_btn.addTarget(self, action:#selector(uploagVideo), for:.touchUpInside)
 
     
         
@@ -132,11 +173,18 @@ class UploadVideo2Controller: UIViewController,  UIImagePickerControllerDelegate
             make.top.equalTo(video_size_label.snp.bottom).offset(20)
         }
         
-        upload_btn.snp.makeConstraints { (make) in
+        selectt_video_btn.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
             make.top.equalTo(notice_label.snp.bottom).offset(20)
         }
+        
+        upload_btn.snp.makeConstraints { (make) in
+            make.left.equalToSuperview().offset(20)
+            make.right.equalToSuperview().offset(-20)
+            make.top.equalTo(selectt_video_btn.snp.bottom).offset(20)
+        }
+        
         
         
 

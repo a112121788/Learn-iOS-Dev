@@ -29,6 +29,7 @@
 		972BD42D20BFE955005E8A2E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		972BD42F20BFEE55005E8A2E /* UploadVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVideoController.swift; sourceTree = "<group>"; };
 		972BD43120C0106F005E8A2E /* UploadVideo2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadVideo2Controller.swift; sourceTree = "<group>"; };
+		972BD43320C01E74005E8A2E /* Header-Brad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Header-Brad.h"; sourceTree = "<group>"; };
 		A929D40964A6D49C88D06F59 /* Pods-DemoLoginPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLoginPage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoLoginPage/Pods-DemoLoginPage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +82,7 @@
 				9718390920BFDDC800611C7E /* Assets.xcassets */,
 				9718390B20BFDDC800611C7E /* LaunchScreen.storyboard */,
 				9718390E20BFDDC800611C7E /* Info.plist */,
+				972BD43320C01E74005E8A2E /* Header-Brad.h */,
 			);
 			path = DemoLoginPage;
 			sourceTree = "<group>";
@@ -169,15 +171,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DemoLoginPage/Pods-DemoLoginPage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HappyDNS/HappyDNS.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/Qiniu/Qiniu.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/VGPlayer/VGPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HappyDNS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Qiniu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VGPlayer.framework",
 			);
@@ -361,6 +367,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaoshuaiepng.DemoLoginPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoLoginPage/Header-Brad.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,6 +387,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaoshuaiepng.DemoLoginPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoLoginPage/Header-Brad.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
