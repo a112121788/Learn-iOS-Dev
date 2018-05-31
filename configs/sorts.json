@@ -2,23 +2,38 @@
     "": [
         "readme.md", 
         "learn-ios-dev", 
-        "day04", 
-        "day03", 
+        "day01", 
         "day02", 
-        "day01"
+        "day03", 
+        "day04", 
+        "day05", 
+        "day06"
+    ], 
+    "day04/demologinpage": [
+        "demologinpage", 
+        "pods", 
+        "demologinpage.xcodeproj", 
+        "demologinpage.xcworkspace"
     ], 
     "day03": [
         "readme.md"
     ], 
     "day02": [
-        "readme.md", 
         "demosecondapp", 
         "demofirstapp", 
         "demouikit.playground"
     ], 
     "day01": [
         "readme.md", 
+        "day02", 
         "demoplayground.playground"
+    ], 
+    "day06": [
+        "readme.md"
+    ], 
+    "day05": [
+        "readme.md", 
+        "demonetwork"
     ], 
     "day04": [
         "readme.md", 
@@ -26,39 +41,57 @@
         "demoappwithpods"
     ], 
     "__positions": {
-        "day04/demologinpage": 3002, 
-        "day01/demoplayground.playground": 6002, 
-        "day02/demofirstapp": 5003, 
-        "day02/readme.md": 5001, 
-        "day03": 4, 
-        "day02": 5, 
-        "day01": 6, 
-        "day04/readme.md": 3001, 
-        "day04/demoappwithpods": 3003, 
-        "day04": 3, 
-        "day03/readme.md": 4001, 
+        "day04/readme.md": 6001, 
+        "day01/readme.md": 3001, 
+        "day04/demologinpage/demologinpage.xcworkspace": 6002004, 
+        "day05/readme.md": 7001, 
+        "day04/demologinpage/demologinpage.xcodeproj": 6002003, 
+        "day04/demologinpage/demologinpage": 6002001, 
         "learn-ios-dev": 2, 
-        "day01/readme.md": 6001, 
-        "day02/demosecondapp": 5002, 
+        "day02/demouikit.playground": 4003, 
+        "day04/demologinpage": 6002, 
+        "day03": 5, 
+        "day02": 4, 
+        "day01": 3, 
+        "day04/demoappwithpods": 6003, 
+        "day06": 8, 
+        "day05": 7, 
+        "day04": 6, 
+        "day04/demologinpage/pods": 6002002, 
+        "day02/demosecondapp": 4001, 
         "readme.md": 1, 
-        "day02/demouikit.playground": 5004
+        "day01/demoplayground.playground": 3003, 
+        "day02/demofirstapp": 4002, 
+        "day01/day02": 3002, 
+        "day06/readme.md": 8001, 
+        "day05/demonetwork": 7002, 
+        "day03/readme.md": 5001
     }, 
     "__raw_positions": {
-        "day04/demologinpage": 2, 
-        "day01/demoplayground.playground": 2, 
-        "day02/demofirstapp": 3, 
-        "day02/readme.md": 1, 
-        "day03": 4, 
-        "day02": 5, 
-        "day01": 6, 
         "day04/readme.md": 1, 
-        "day04/demoappwithpods": 3, 
-        "day04": 3, 
-        "day03/readme.md": 1, 
-        "learn-ios-dev": 2, 
         "day01/readme.md": 1, 
-        "day02/demosecondapp": 2, 
+        "day04/demologinpage/demologinpage.xcworkspace": 4, 
+        "day05/readme.md": 1, 
+        "day04/demologinpage/demologinpage.xcodeproj": 3, 
+        "day04/demologinpage/demologinpage": 1, 
+        "learn-ios-dev": 2, 
+        "day02/demouikit.playground": 3, 
+        "day04/demologinpage": 2, 
+        "day03": 5, 
+        "day02": 4, 
+        "day01": 3, 
+        "day04/demoappwithpods": 3, 
+        "day06": 8, 
+        "day05": 7, 
+        "day04": 6, 
+        "day04/demologinpage/pods": 2, 
+        "day02/demosecondapp": 1, 
         "readme.md": 1, 
-        "day02/demouikit.playground": 4
+        "day01/demoplayground.playground": 3, 
+        "day02/demofirstapp": 2, 
+        "day01/day02": 2, 
+        "day06/readme.md": 1, 
+        "day05/demonetwork": 2, 
+        "day03/readme.md": 1
     }
 }
