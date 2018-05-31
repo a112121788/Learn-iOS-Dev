@@ -1,3 +1,61 @@
-PODFILE CHECKSUM: e2d0c5a21e129bf06387cc8d111a34f224b5a90c
+PODS:
+  - Alamofire (4.7.2)
+  - HappyDNS (0.3.14)
+  - KeychainSwift (11.0.0)
+  - Kingfisher (4.8.0)
+  - Material (2.15.0):
+    - Material/Core (= 2.15.0)
+  - Material/Core (2.15.0):
+    - Motion (~> 1.3.0)
+  - Motion (1.3.5):
+    - Motion/Core (= 1.3.5)
+  - Motion/Core (1.3.5)
+  - ObjectMapper (3.1.0)
+  - Qiniu (7.2.4):
+    - HappyDNS (~> 0.3)
+  - SnapKit (4.0.0)
+  - SwiftyJSON (4.1.0)
+  - VGPlayer (0.2.0):
+    - SnapKit (~> 4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - KeychainSwift
+  - Kingfisher
+  - Material
+  - ObjectMapper
+  - Qiniu (~> 7.2)
+  - SnapKit
+  - SwiftyJSON
+  - VGPlayer (~> 0.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - HappyDNS
+    - KeychainSwift
+    - Kingfisher
+    - Material
+    - Motion
+    - ObjectMapper
+    - Qiniu
+    - SnapKit
+    - SwiftyJSON
+    - VGPlayer
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  HappyDNS: dc6a164ee81979093123c241c6353bcf0218add6
+  KeychainSwift: bea6bd9f98af7b8d7ca4aa79fe105c00fab532db
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  Material: 00e32bb5e61b3f749044897b2d93acd8bf33faa4
+  Motion: 9f74d115d7f72bb5380a8e3cde2f8a1fc898ac36
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  Qiniu: 65384bca1cdb0480a68d9b9b8f54db53418c0355
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  VGPlayer: a1787135559aa3b9201ebdc733ee283315492289
+
+PODFILE CHECKSUM: 93b176701ccb1fa218dda97d91d033e08e02f4ec
 
 COCOAPODS: 1.5.2
