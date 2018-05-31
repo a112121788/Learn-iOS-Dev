@@ -1,39 +1,50 @@
 {
     "": [
+        "readme.md", 
         "learn-ios-dev", 
+        "day03", 
         "day02", 
         "day01"
     ], 
-    "__positions": {
-        "day01/demoplayground.playground": 3002, 
-        "day02/demofirstapp": 2002, 
-        "day02/readme.md": 2004, 
-        "day02": 2, 
-        "day01": 3, 
-        "learn-ios-dev": 1, 
-        "day01/readme.md": 3001, 
-        "day02/demosecondapp": 2001, 
-        "day02/demouikit.playground": 2003
-    }, 
+    "day03": [
+        "readme.md"
+    ], 
+    "day02": [
+        "readme.md", 
+        "demosecondapp", 
+        "demofirstapp", 
+        "demouikit.playground"
+    ], 
     "day01": [
         "readme.md", 
         "demoplayground.playground"
     ], 
+    "__positions": {
+        "day01/demoplayground.playground": 5002, 
+        "day02/demofirstapp": 4003, 
+        "day02/readme.md": 4001, 
+        "day03": 3, 
+        "day02": 4, 
+        "day01": 5, 
+        "day03/readme.md": 3001, 
+        "learn-ios-dev": 2, 
+        "day01/readme.md": 5001, 
+        "day02/demosecondapp": 4002, 
+        "readme.md": 1, 
+        "day02/demouikit.playground": 4004
+    }, 
     "__raw_positions": {
         "day01/demoplayground.playground": 2, 
-        "day02/demofirstapp": 2, 
-        "day02/readme.md": 4, 
-        "day02": 2, 
-        "day01": 3, 
-        "learn-ios-dev": 1, 
+        "day02/demofirstapp": 3, 
+        "day02/readme.md": 1, 
+        "day03": 3, 
+        "day02": 4, 
+        "day01": 5, 
+        "day03/readme.md": 1, 
+        "learn-ios-dev": 2, 
         "day01/readme.md": 1, 
-        "day02/demosecondapp": 1, 
-        "day02/demouikit.playground": 3
-    }, 
-    "day02": [
-        "demosecondapp", 
-        "demofirstapp", 
-        "demouikit.playground", 
-        "readme.md"
-    ]
+        "day02/demosecondapp": 2, 
+        "readme.md": 1, 
+        "day02/demouikit.playground": 4
+    }
 }
