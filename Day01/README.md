@@ -52,3 +52,7 @@
 ### 
 
 ## Xcode 上手
+> App Store 下载安装
+
+快捷键是必须的
+[Xcode快捷键大全[便捷记忆版]](https://www.jianshu.com/p/78561f48e70c)
