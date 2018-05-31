@@ -1,8 +1,6 @@
 # 学习要点
-设计模式初步
 
-- [x] Swift 设计模式（iOS篇）
-
+Swift 设计模式（iOS篇）
 - MVC
 - Singleton
 - Facade
