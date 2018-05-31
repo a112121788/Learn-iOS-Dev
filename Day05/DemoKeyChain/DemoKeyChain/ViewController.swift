@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let keychain = KeychainSwift()
         
+        keychain.set("xxxx", forKey: "key1")
+        print(keychain.get("key1"))
     }
 
 }
