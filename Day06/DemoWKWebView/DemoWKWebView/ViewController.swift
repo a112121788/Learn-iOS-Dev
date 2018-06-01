@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import WebKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WKNavigationDelegate {
     let webView = WKWebView()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +18,20 @@ class ViewController: UIViewController {
         
         self.view.addSubview(webView)
         
+        self.webView.navigationDelegate = self
+        
         webView.load(URLRequest(url: URL(string: "https://www.jianshu.com/p/6ba2507445e4")!))
         webView.snp.makeConstraints { (make) in
             make.left.right.bottom.top.equalTo(self.view)
         }
+    }
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
 }
 
