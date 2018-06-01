@@ -5,4 +5,5 @@ use_frameworks!
 target 'DemoTableView' do
   pod 'SnapKit'
   pod 'Material'
+  pod 'RealmSwift'
 end
