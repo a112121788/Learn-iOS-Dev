@@ -27,8 +27,9 @@ KVO(Key-Value Observing)，俗称键值监听。它提供一种机制，当指�
 [DemoNetImage](https://github.com/a112121788/Learn-iOS-Dev/commit/d204683be9c301d523b274962c77eaeb2d906e05)
 
 **SVProgressHUD**
-SVProgressHUD
+[SVProgressHUD Demo](https://github.com/a112121788/Learn-iOS-Dev/commit/f783852139979bfb7c270cd3618e38f6a1dc02ba)
 
 **DeviceKit**
+[DeviceKit Demo](https://github.com/a112121788/Learn-iOS-Dev/commit/c2a3682315324eacd41bfe4842b47904ddc76d4d)
 
 **Toast-Swift**
