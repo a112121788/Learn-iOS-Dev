@@ -1,0 +1,8 @@
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'DemoTableView' do
+  pod 'SnapKit'
+  pod 'Material'
+end

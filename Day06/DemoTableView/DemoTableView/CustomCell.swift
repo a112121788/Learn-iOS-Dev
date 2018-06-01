@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SnapKit
+import Material
 
 class CustomCell: UITableViewCell {
     var  name:UILabel?
@@ -21,10 +23,19 @@ class CustomCell: UITableViewCell {
     }
     
     func initViews(){
+        
         self.name = UILabel()
         self.name?.textColor = UIColor.white
         self.name?.backgroundColor = UIColor.red
-        self.name?.frame = CGRect(x:0, y:0, width:300, height:60)
+        self.name?.textAlignment  = NSTextAlignment.center
+
         self.addSubview(self.name!)
+        
+        self.name?.snp.makeConstraints { (make) in
+            make.left.top.equalTo(15)
+            make.right.equalTo(-15)
+            make.bottom.equalTo(self)
+        }
+        
     }
 }

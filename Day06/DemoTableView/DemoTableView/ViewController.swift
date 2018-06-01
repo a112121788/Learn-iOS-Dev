@@ -30,6 +30,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     
+
+    
     //cell 高度
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
@@ -53,6 +55,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: false) //取消选中效果
+        
         print("did select \(indexPath.row)")
     }
 }
