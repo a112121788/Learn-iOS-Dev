@@ -33,6 +33,7 @@
     ], 
     "day05": [
         "readme.md", 
+        "demonetimage", 
         "demokeychain", 
         "demonetwork"
     ], 
@@ -43,6 +44,7 @@
     ], 
     "__positions": {
         "day04/readme.md": 6001, 
+        "day05/demonetimage": 7002, 
         "day01/readme.md": 3001, 
         "day04/demologinpage/demologinpage.xcworkspace": 6002004, 
         "day05/readme.md": 7001, 
@@ -65,12 +67,13 @@
         "day02/demofirstapp": 4002, 
         "day01/day02": 3002, 
         "day06/readme.md": 8001, 
-        "day05/demokeychain": 7002, 
-        "day05/demonetwork": 7003, 
+        "day05/demokeychain": 7003, 
+        "day05/demonetwork": 7004, 
         "day03/readme.md": 5001
     }, 
     "__raw_positions": {
         "day04/readme.md": 1, 
+        "day05/demokeychain": 3, 
         "day01/readme.md": 1, 
         "day04/demologinpage/demologinpage.xcworkspace": 4, 
         "day05/readme.md": 1, 
@@ -93,8 +96,8 @@
         "day02/demofirstapp": 2, 
         "day01/day02": 2, 
         "day06/readme.md": 1, 
-        "day05/demokeychain": 2, 
-        "day05/demonetwork": 3, 
+        "day05/demonetimage": 2, 
+        "day05/demonetwork": 4, 
         "day03/readme.md": 1
     }
 }
