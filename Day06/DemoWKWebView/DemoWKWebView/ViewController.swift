@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import SnapKit
-import WebKit
 
 class ViewController: UIViewController, WKNavigationDelegate {
     let webView = WKWebView()
@@ -16,14 +14,11 @@ class ViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         self.title = "title"
         
-        self.view.addSubview(webView)
+        self.view = webView
         
         self.webView.navigationDelegate = self
-        
         webView.load(URLRequest(url: URL(string: "https://www.jianshu.com/p/6ba2507445e4")!))
-        webView.snp.makeConstraints { (make) in
-            make.left.right.bottom.top.equalTo(self.view)
-        }
+    
     }
     
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
