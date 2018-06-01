@@ -9,6 +9,7 @@
 import UIKit
 import Kingfisher
 import SVProgressHUD
+import DeviceKit
 
 class ViewController: UIViewController {
     
@@ -19,7 +20,8 @@ class ViewController: UIViewController {
         self.view.addSubview(imageView)
         imageView.kf.setImage(with: URL(string: "https://www.baidu.com/img/baidu_jgylogo3.gif"))
         
-        SVProgressHUD.show()
+        print(Device().systemName)
+        print(Device().description)
     }
 
 }
