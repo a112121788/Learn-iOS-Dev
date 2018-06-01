@@ -41,7 +41,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     // cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = UITableViewCell(style: UITableViewCellStyle.value2, reuseIdentifier: nil)
         cell.textLabel?.text =  table_data[indexPath.row]
         return cell
     }
