@@ -10,18 +10,19 @@
         "day06"
     ], 
     "day04/demologinpage": [
-        "demologinpage", 
-        "pods", 
+        "demologinpage.xcworkspace", 
         "demologinpage.xcodeproj", 
-        "demologinpage.xcworkspace"
+        "pods", 
+        "demologinpage"
     ], 
     "day03": [
         "readme.md"
     ], 
     "day02": [
+        "readme.md", 
+        "demouikit.playground", 
         "demosecondapp", 
-        "demofirstapp", 
-        "demouikit.playground"
+        "demofirstapp"
     ], 
     "day01": [
         "readme.md", 
@@ -42,16 +43,27 @@
         "demologinpage", 
         "demoappwithpods"
     ], 
+    "day02/demosecondapp": [
+        "demosecondapp", 
+        "demosecondapp.xcodeproj"
+    ], 
+    "day02/demouikit.playground/playground.xcworkspace": [
+        "xcshareddata"
+    ], 
     "__positions": {
         "day04/readme.md": 6001, 
         "day05/demonetimage": 7002, 
         "day01/readme.md": 3001, 
-        "day04/demologinpage/demologinpage.xcworkspace": 6002004, 
+        "day05/demonetwork": 7004, 
+        "day02/demouikit.playground/playground.xcworkspace/xcshareddata": 4002001001, 
+        "day04/demologinpage/demologinpage.xcworkspace": 6002001, 
+        "day02/readme.md": 4001, 
         "day05/readme.md": 7001, 
-        "day04/demologinpage/demologinpage.xcodeproj": 6002003, 
-        "day04/demologinpage/demologinpage": 6002001, 
         "learn-ios-dev": 2, 
-        "day02/demouikit.playground": 4003, 
+        "day04/demologinpage/demologinpage": 6002004, 
+        "day04/demologinpage/demologinpage.xcodeproj": 6002002, 
+        "day02/demosecondapp/demosecondapp": 4003001, 
+        "day02/demouikit.playground": 4002, 
         "day04/demologinpage": 6002, 
         "day03": 5, 
         "day02": 4, 
@@ -60,27 +72,32 @@
         "day06": 8, 
         "day05": 7, 
         "day04": 6, 
-        "day04/demologinpage/pods": 6002002, 
-        "day02/demosecondapp": 4001, 
+        "day04/demologinpage/pods": 6002003, 
+        "day02/demosecondapp": 4003, 
         "readme.md": 1, 
         "day01/demoplayground.playground": 3003, 
-        "day02/demofirstapp": 4002, 
+        "day02/demofirstapp": 4004, 
         "day01/day02": 3002, 
         "day06/readme.md": 8001, 
+        "day02/demosecondapp/demosecondapp.xcodeproj": 4003002, 
         "day05/demokeychain": 7003, 
-        "day05/demonetwork": 7004, 
+        "day02/demouikit.playground/playground.xcworkspace": 4002001, 
         "day03/readme.md": 5001
     }, 
     "__raw_positions": {
         "day04/readme.md": 1, 
         "day05/demokeychain": 3, 
         "day01/readme.md": 1, 
-        "day04/demologinpage/demologinpage.xcworkspace": 4, 
+        "day02/demouikit.playground/playground.xcworkspace": 1, 
+        "day02/demouikit.playground/playground.xcworkspace/xcshareddata": 1, 
+        "day04/demologinpage/demologinpage.xcworkspace": 1, 
+        "day02/readme.md": 1, 
         "day05/readme.md": 1, 
-        "day04/demologinpage/demologinpage.xcodeproj": 3, 
-        "day04/demologinpage/demologinpage": 1, 
         "learn-ios-dev": 2, 
-        "day02/demouikit.playground": 3, 
+        "day04/demologinpage/demologinpage": 4, 
+        "day04/demologinpage/demologinpage.xcodeproj": 2, 
+        "day02/demosecondapp/demosecondapp": 1, 
+        "day02/demouikit.playground": 2, 
         "day04/demologinpage": 2, 
         "day03": 5, 
         "day02": 4, 
@@ -89,15 +106,19 @@
         "day06": 8, 
         "day05": 7, 
         "day04": 6, 
-        "day04/demologinpage/pods": 2, 
-        "day02/demosecondapp": 1, 
+        "day04/demologinpage/pods": 3, 
+        "day02/demosecondapp": 3, 
         "readme.md": 1, 
         "day01/demoplayground.playground": 3, 
-        "day02/demofirstapp": 2, 
+        "day02/demofirstapp": 4, 
         "day01/day02": 2, 
         "day06/readme.md": 1, 
+        "day02/demosecondapp/demosecondapp.xcodeproj": 2, 
         "day05/demonetimage": 2, 
         "day05/demonetwork": 4, 
         "day03/readme.md": 1
-    }
+    }, 
+    "day02/demouikit.playground": [
+        "playground.xcworkspace"
+    ]
 }

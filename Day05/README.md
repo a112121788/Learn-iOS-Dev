@@ -1,5 +1,11 @@
 # 学习要点
 
+布局&View
+- Material
+- SnapKit
+- VGPlayer
+
+ 布局之外
 - 七牛上传文件
 - Alamofire
 - KeychainSwift
@@ -9,6 +15,8 @@
 - DeviceKit
 - Toast-Swift
 
+**布局示例**
+[DemoLoginPage](https://github.com/a112121788/Learn-iOS-Dev/tree/master/Day04/DemoLoginPage)
 **七牛上传文件**
 <https://github.com/a112121788/QiniuUploadVideoDemo>
 
