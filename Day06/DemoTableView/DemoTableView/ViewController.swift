@@ -41,9 +41,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     // cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.value2, reuseIdentifier: nil)
-        cell.textLabel?.text =  table_data[indexPath.row]
-        return cell
+        
+        let custom_cell = CustomCell(style: .default, reuseIdentifier: nil)
+        custom_cell.name?.text = table_data[indexPath.row]
+        return custom_cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
