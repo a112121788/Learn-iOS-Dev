@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import WebKit
+import Reachability
 
 class ViewController: UIViewController, WKNavigationDelegate {
     let webView = WKWebView()
@@ -19,6 +21,10 @@ class ViewController: UIViewController, WKNavigationDelegate {
         self.webView.navigationDelegate = self
         webView.load(URLRequest(url: URL(string: "https://www.jianshu.com/p/6ba2507445e4")!))
     
+        let reachability = Reachability()
+        
+        print(reachability?.connection == .wifi)
+        
     }
     
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {

@@ -6,4 +6,5 @@ target 'DemoWKWebView' do
   use_frameworks!
   pod 'SnapKit'
   pod 'Material'
+  pod 'ReachabilitySwift'
 end
