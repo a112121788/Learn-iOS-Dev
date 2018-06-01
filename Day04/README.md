@@ -26,4 +26,6 @@ target 'DemoAppWithPods' do
 end
 ```
 
-**代码布局**
+
+**Pod加速**
+<https://mirrors.tuna.tsinghua.edu.cn/help/CocoaPods/>
