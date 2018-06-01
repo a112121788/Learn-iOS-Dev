@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     let tableView = UITableView(frame: UIScreen.main.bounds, style: UITableViewStyle.plain)
-    let table_data = ["1", "2","3"]
-    
+    let table_data = Array(repeating: "1", count: 10000)
+    let cellIdentifier = "cell"
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,9 +42,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     // cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var custom_cell = CustomCell(style: .default, reuseIdentifier: cellIdentifier)
+//        var custom_cell  = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? CustomCell
+//        if custom_cell == nil {
+//            custom_cell = CustomCell(style: .default, reuseIdentifier: cellIdentifier)
+//        }
         
-        let custom_cell = CustomCell(style: .default, reuseIdentifier: nil)
-        custom_cell.name?.text = table_data[indexPath.row]
+        custom_cell.name?.text = "\([indexPath.row])"
         return custom_cell
     }
     
