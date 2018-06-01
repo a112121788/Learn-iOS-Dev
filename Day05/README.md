@@ -46,3 +46,18 @@ KVO(Key-Value Observing)，俗称键值监听。它提供一种机制，当指�
 **SYSwiftLearning**
 swift纯代码开发学习
 [SYSwiftLearning](https://github.com/potato512/SYSwiftLearning)
+
+**学习资源**
+简书  iOS Developer
+<https://www.jianshu.com/c/3233d1a249ca>
+掘金 
+<https://juejin.im/welcome/ios>
+
+社区
+<http://www.cocoachina.com/bbs/>
+
+Swift 中国
+<http://swiftcn.io/>
+
+唐巧的博客
+<http://blog.devtang.com/>

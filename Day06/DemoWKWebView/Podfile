@@ -1,0 +1,9 @@
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'DemoWKWebView' do
+  use_frameworks!
+  pod 'SnapKit'
+  pod 'Material'
+end
