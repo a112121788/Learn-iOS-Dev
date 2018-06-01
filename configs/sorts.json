@@ -30,7 +30,9 @@
         "demoplayground.playground"
     ], 
     "day06": [
-        "readme.md"
+        "readme.md", 
+        "demotableview", 
+        "demowkwebview"
     ], 
     "day05": [
         "readme.md", 
@@ -59,10 +61,12 @@
         "day05/demonetimage": 7002, 
         "day01/readme.md": 3001, 
         "day05/demonetwork": 7004, 
+        "day06/demowkwebview": 8003, 
         "day02/demouikit.playground/playground.xcworkspace/xcshareddata": 4002001001, 
         "day04/demologinpage/demologinpage.xcworkspace": 6002001, 
         "day05/demonetwork/pods": 7004003, 
         "day03/readme.md": 5001, 
+        "day06/demotableview": 8002, 
         "day02/readme.md": 4001, 
         "day05/readme.md": 7001, 
         "learn-ios-dev": 2, 
@@ -105,10 +109,12 @@
         "day05/demokeychain": 3, 
         "day01/readme.md": 1, 
         "day02/demouikit.playground/playground.xcworkspace": 1, 
+        "day06/demowkwebview": 3, 
         "day02/demouikit.playground/playground.xcworkspace/xcshareddata": 1, 
         "day04/demologinpage/demologinpage.xcworkspace": 1, 
         "day05/demonetwork/demonetwork.xcworkspace/xcshareddata": 2, 
         "day05/demonetwork/demonetwork.xcodeproj": 2, 
+        "day06/demotableview": 2, 
         "day02/readme.md": 1, 
         "day05/readme.md": 1, 
         "learn-ios-dev": 2, 
