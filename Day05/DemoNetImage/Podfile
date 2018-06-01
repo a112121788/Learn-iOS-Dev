@@ -6,4 +6,5 @@ target 'DemoNetImage' do
   pod 'Kingfisher'
   pod 'SVProgressHUD'
   pod 'DeviceKit'
+  pod 'Toast-Swift'
 end

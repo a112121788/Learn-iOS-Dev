@@ -10,6 +10,7 @@ import UIKit
 import Kingfisher
 import SVProgressHUD
 import DeviceKit
+import Toast_Swift
 
 class ViewController: UIViewController {
     
@@ -22,6 +23,8 @@ class ViewController: UIViewController {
         
         print(Device().systemName)
         print(Device().description)
+        
+        self.view.makeToast(Device().name)
     }
 
 }
