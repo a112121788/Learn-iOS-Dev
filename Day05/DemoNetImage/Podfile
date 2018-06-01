@@ -4,4 +4,5 @@ use_frameworks!
 target 'DemoNetImage' do
   use_frameworks!
   pod 'Kingfisher'
+  pod 'SVProgressHUD'
 end

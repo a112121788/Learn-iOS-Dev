@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import SVProgressHUD
 
 class ViewController: UIViewController {
     
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
         imageView.layer.frame = UIScreen.main.bounds
         self.view.addSubview(imageView)
         imageView.kf.setImage(with: URL(string: "https://www.baidu.com/img/baidu_jgylogo3.gif"))
+        
+        SVProgressHUD.show()
     }
 
 }
