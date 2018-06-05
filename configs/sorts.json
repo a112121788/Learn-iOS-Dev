@@ -37,7 +37,8 @@
         "demoplayground.playground"
     ], 
     "day07": [
-        "readme.md"
+        "readme.md", 
+        "demodeepinnetwork"
     ], 
     "day06": [
         "readme.md", 
@@ -55,6 +56,10 @@
         "demologinpage", 
         "demoappwithpods"
     ], 
+    "day05/demonetwork/demonetwork.xcworkspace": [
+        "xcuserdata", 
+        "xcshareddata"
+    ], 
     "day02/demosecondapp": [
         "demosecondapp", 
         "demosecondapp.xcodeproj"
@@ -63,7 +68,7 @@
         "xcshareddata"
     ], 
     "__positions": {
-        "day04/readme.md": 6001, 
+        "day07/demodeepinnetwork": 9002, 
         "day06/demotableview/pods": 8002003, 
         "day05/demonetimage": 7002, 
         "day01/readme.md": 3001, 
@@ -71,13 +76,13 @@
         "day06/demowkwebview": 8003, 
         "day02/demouikit.playground/playground.xcworkspace/xcshareddata": 4003001001, 
         "day04/demologinpage/demologinpage.xcworkspace": 6002001, 
-        "day05/demonetwork/demonetwork.xcworkspace/xcshareddata": 7004004002, 
+        "day05/demonetwork/pods": 7004003, 
         "day06/demotableview/demotableview.xcworkspace": 8002004, 
         "day06/demotableview": 8002, 
         "day02/readme.md": 4001, 
         "day05/readme.md": 7001, 
         "learn-ios-dev": 2, 
-        "day05/demonetwork/pods": 7004003, 
+        "day05/demonetwork/demonetwork.xcworkspace/xcshareddata": 7004004002, 
         "day04/demologinpage/demologinpage": 6002004, 
         "day04/demologinpage/demologinpage.xcodeproj": 6002002, 
         "day02/demosecondapp/demosecondapp": 4002001, 
@@ -98,6 +103,7 @@
         "day04/demologinpage/pods": 6002003, 
         "day02/demosecondapp": 4002, 
         "readme.md": 1, 
+        "day04/readme.md": 6001, 
         "day01/demoplayground.playground": 3003, 
         "day02/demofirstapp": 4004, 
         "day01/day02": 3002, 
@@ -116,12 +122,8 @@
         "pods", 
         "demonetwork.xcworkspace"
     ], 
-    "day05/demonetwork/demonetwork.xcworkspace": [
-        "xcuserdata", 
-        "xcshareddata"
-    ], 
     "__raw_positions": {
-        "day04/readme.md": 1, 
+        "day07/demodeepinnetwork": 2, 
         "day06/demotableview/pods": 3, 
         "day05/demokeychain": 3, 
         "day01/readme.md": 1, 
@@ -130,13 +132,13 @@
         "day02/demouikit.playground/playground.xcworkspace/xcshareddata": 1, 
         "day05/demonetwork/demonetwork.xcodeproj": 2, 
         "day04/demologinpage/demologinpage.xcworkspace": 1, 
-        "day05/demonetwork/pods": 3, 
+        "day05/demonetwork/demonetwork.xcworkspace/xcshareddata": 2, 
         "day06/demotableview/demotableview.xcworkspace": 4, 
         "day06/demotableview": 2, 
         "day02/readme.md": 1, 
         "day05/readme.md": 1, 
         "learn-ios-dev": 2, 
-        "day05/demonetwork/demonetwork.xcworkspace/xcshareddata": 2, 
+        "day05/demonetwork/pods": 3, 
         "day04/demologinpage/demologinpage": 4, 
         "day04/demologinpage/demologinpage.xcodeproj": 2, 
         "day02/demosecondapp/demosecondapp": 1, 
@@ -156,6 +158,7 @@
         "day04/demologinpage/pods": 3, 
         "day02/demosecondapp": 2, 
         "readme.md": 1, 
+        "day04/readme.md": 1, 
         "day01/demoplayground.playground": 3, 
         "day02/demofirstapp": 4, 
         "day01/day02": 2, 
