@@ -10,7 +10,6 @@
 **init:** 类的构造方法的修饰
 **deinit:** 类的析构方法的修饰
 **extension: ** 扩展，类似OC的categories
-
 **let:** 声明一个常量
 **protocol:** 协议，也可以叫接口
 **static:** 声明静态变量或函数
